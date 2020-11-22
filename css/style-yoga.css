@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+html {
+    max-width: 85vw;
+    margin: auto;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+.jumbotron.fixed {
+    background: url('../img/background-fixed.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10rem 0;
+    border-radius: 0;
+}
+
+.jumbotron.bg-custom {
+    background: url('../img/bg-custom.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 95vh;
+    border-radius: 0; 
+}
+
+.bg-margin {
+    height: 100%;
+}
+
+/* Navigation */
+nav li a {
+    font-size: 3.5vh;
+    font-weight: 900;
+    color: #000!important;
+}
+nav li {
+    padding: 0 15px;    
+    /* border-width: 0 2px;
+    border-style: solid; */
+    border-radius: 30px;
+}
+
+.navbar-brand {
+    background: url('../img/download.jfif') no-repeat center center;
+}
+.navbar-brand > a {
+    font-size: 2.5rem;
+}
+/* End Navigation */
+
+
+
+/* Footer */
+footer li {
+    padding: 1.5rem;
+    list-style-type: none;
+
+}
+
+footer li .fab {
+    font-size: 2rem;
+}
+
+footer li .fab:hover {
+    color: black;
+}
+/* End Footer */
+
+
+
+
+
+
+
+/******
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 576px) { 
+    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+ }
+
+ 
+
+
