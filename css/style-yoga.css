@@ -1,14 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-html {
-    max-width: 85vw;
+/* html {
+    max-width: 85vw; 
     margin: auto;
-}
+} */
 
 body {
     font-family: 'Indie Flower', cursive;
+    /* overflow-x: hidden; */
 }
 
+/* Top Bar */
+.top-bar {
+    background-color: rgba(222, 187, 148, 0.7);
+}
+.top-bar .d-flex .flags {
+    position: relative;
+    right: 1rem;
+}
+.top-bar p {
+    font-size: 1.2rem;
+}
+.top-bar p a:hover {
+    text-decoration-style: double;
+}
+/* End Top Bar */
+
+
+/* Navigation */
+nav li {
+    padding: 0 15px;    
+}
+nav li a {
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 900;
+    color: #000!important;
+}
+.navbar-brand {
+    background: url('../img/navbar-brand-bg.png') no-repeat center center;
+}
+.navbar-brand > a {
+    font-size: 2.5rem;
+}
+/* End Navigation */
+
+/* Main Hero Picture */
+.jumbotron.bg-custom {
+    background: url('../img/bg-custom.jpg') no-repeat right center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 95vh;
+    padding: 0;
+    margin: 0;
+    border-radius: 0; 
+}
+.bg-margin {
+    height: 100%;
+}
+/* End Main Hero Picture */
+
+
+/* Fixed section */
 .jumbotron.fixed {
     background: url('../img/background-fixed.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -18,63 +72,117 @@ body {
     padding: 10rem 0;
     border-radius: 0;
 }
+/*End Fixed section */
 
-.jumbotron.bg-custom {
-    background: url('../img/bg-custom.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 95vh;
-    border-radius: 0; 
+img.img-fluid.rounded-circle {
+    width: 40vw;
+    height: auto;
 }
 
-.bg-margin {
-    height: 100%;
-}
-
-/* Navigation */
-nav li a {
-    font-size: 3.5vh;
-    font-weight: 900;
-    color: #000!important;
-}
-nav li {
-    padding: 0 15px;    
-    /* border-width: 0 2px;
-    border-style: solid; */
-    border-radius: 30px;
-}
-
-.navbar-brand {
-    background: url('../img/download.jfif') no-repeat center center;
-}
-.navbar-brand > a {
-    font-size: 2.5rem;
-}
-/* End Navigation */
 
 
 
 /* Footer */
 footer li {
-    padding: 1.5rem;
     list-style-type: none;
-
 }
-
 footer li .fab {
     font-size: 2rem;
+    padding: 1.5rem;
 }
-
 footer li .fab:hover {
     color: black;
 }
 /* End Footer */
 
 
+@media (max-width: 575.98px) { 
+/* Navigation */
+nav li a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+nav li {
+    width: 100%;
+    border-top: 1px solid black;
+    border-radius: 0;
+}
+.navbar-brand > a {
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.jumbotron.bg-custom {
+    background: url('../img/bg-custom-xs.jpg') no-repeat center center cover;
+    height: 65vh;
+}
+.jumbotron.bg-custom p {
+    visibility: hidden;
+}
+/* Footer */
+    footer li .fab {
+        font-size: 1.3rem;
+        padding-top: 40px;
+    }
+    footer ul {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px) { 
+    footer li .fab {
+        font-size: 1.6rem;
+        /* padding: .5rem; */
+    }
+    .h2-custom {
+        font-size: 2.5rem;
+    }
+    nav li {
+        padding: 0 15px;
+        border-top: 1px solid black;
+        width: 100%;    
+    }
+    nav li a {
+        font-size: 3vh;
+        text-align: center;
+        font-weight: 900;
+        color: #000!important;
+    }
+
+}
 
 
+@media (min-width: 768px) { 
+    img.img-fluid {
+        max-width: 40%;
+        height: auto;
+    }
+    .h2-custom {
+        font-size: 3rem;
+    }
+    
+    
+}
+
+
+@media (min-width: 992px) { 
+    footer li .fab {
+        font-size: 2rem;
+    }
+    img.img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    nav li {
+        border: 0;
+        width: unset;
+    }
+    .h2-custom {
+        font-size: 3.5rem;
+    }
+   
+   
+}
 
 
 
