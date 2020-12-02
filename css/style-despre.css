@@ -1,0 +1,144 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    overflow-x: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: rgba(222, 187, 148, 0.7);
+}
+.top-bar .d-flex .flags {
+    position: relative;
+    right: 1rem;
+}
+.top-bar p {
+    font-size: 1.2rem;
+}
+.top-bar p a:hover {
+    text-decoration-style: double;
+}
+/* End Top Bar */
+
+
+/* Navigation */
+footer ul {
+    list-style-type: none;
+}
+footer i:hover {
+    color: #000
+}
+
+nav li {
+    padding: 0 15px; 
+    border-right: 1px solid black;  
+}
+nav li a {
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 900;
+    color: #000!important;
+}
+.navbar-brand {
+    background: url('../img/navbar-brand-bg.png') no-repeat center center;
+}
+.navbar-brand > a {
+    font-size: 2.5rem;
+}
+/* End Navigation */
+
+/* "Contact" Jumbotron  */
+.jumbotron-fluid {
+    background-image: url('../img/contact-image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-weight: 900;
+    margin: 10px 0;
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+}
+/* End "Contact" Jumbotron */
+
+address h3 {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 575.98px) { 
+/* Navigation */
+nav li a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+nav li {
+    width: 100%;
+    border-top: 1px solid black;
+    border-radius: 0;
+}
+.navbar-brand > a {
+    font-size: 1.5rem;
+}
+    footer ul {
+        justify-content: center;
+    }
+    footer i {
+        padding: 10px;
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+    footer p {
+        margin-top: 10px;
+    }
+    .div-1-custom + div {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (min-width: 576px) { 
+    nav li {
+        padding: 0 15px;
+        border-top: 1px solid black;
+        width: 100%;  
+    }
+    nav li a {
+        font-size: 3vh;
+        text-align: center;
+        font-weight: 900;
+        color: #000!important;
+    }
+
+    footer i {
+        padding: 10px;
+        font-size: 1.6rem;
+    }
+    footer p {
+        margin-top: 10px;
+    }
+}
+
+/* @media (min-width: 768px) { 
+    
+} */
+
+@media (min-width: 992px) { 
+    nav li {
+        border: 0;
+        width: unset;
+        border-right: 1px solid black;  
+    }   
+    nav li:nth-child(3) {
+        border: 0;
+    }
+    nav li:first-child {
+        border-left: 1px solid black;
+    }
+    nav li:nth-child(4) {
+        border-left: 1px solid black;
+    }
+    footer i {
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
