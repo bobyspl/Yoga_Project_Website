@@ -1,83 +1,107 @@
 body {
     font-family: 'Indie Flower', cursive;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* Top Bar */
-.top-bar {
-    background-color: rgba(222, 187, 148, 0.7);
-}
-.top-bar .d-flex .flags {
-    position: relative;
-    right: 1rem;
-}
+
 .top-bar p {
     font-size: 1.2rem;
 }
+
 .top-bar p a:hover {
     text-decoration-style: double;
 }
+
 /* End Top Bar */
 
-
 /* Navigation */
+
 footer ul {
     list-style-type: none;
 }
+
 footer i:hover {
-    color: #000
+    color: #000;
+}
+
+.navbar {
+    /* border-top-left-radius: 25px; */
+    /* border-bottom-right-radius: 25px; */
+    border-radius: 15px;
 }
 
 nav li {
-    padding: 0 15px; 
-    border-right: 1px solid black;  
+    padding: 0 15px;
+    /* border-right: 1px solid black;   */
 }
+
 nav li a {
     font-size: 3vh;
     text-align: center;
     font-weight: 900;
     color: #000!important;
 }
+
 .navbar-brand {
     background: url('../img/navbar-brand-bg.png') no-repeat center center;
 }
-.navbar-brand > a {
+
+.navbar-brand>a {
     font-size: 2.5rem;
 }
+
 /* End Navigation */
 
-/* "Contact" Jumbotron  */
-.jumbotron-fluid {
-    background-image: url('../img/contact-image.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+
+/* .jumbotron {
+    background: url('https://picsum.photos/1900/300?random=1') no-repeat right center;
+    color: #fff; */
+.jumbotron:first-child {
+    background: url('../img/eveniment3.jpg') no-repeat center center;
     background-size: cover;
-    font-weight: 900;
-    margin: 10px 0;
-    border-top: 1px solid black; 
-    border-bottom: 1px solid black; 
+    color: #fff;
 }
-/* End "Contact" Jumbotron */
+.jumbotron:nth-child(2) {
+    background: url('../img/eveniment1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.jumbotron:nth-child(3) {
+    background: url('../img/eveniment2.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.jumbotron:nth-child(4) {
+    background: url('../img/eveniment4.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.jumbotron:last-child {
+    background: url('../img/eveniment1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.bg-info {
+    background-color: rgba(23, 162, 184, 0.6)!important;
+}
 
-address h3 {
-    margin-top: 20px;
-}
 
 
-@media (max-width: 575.98px) { 
-/* Navigation */
-nav li a {
-    font-size: 1rem;
-    font-weight: 400;
-}
-nav li {
-    width: 100%;
-    border-top: 1px solid black;
-    border-radius: 0;
-}
-.navbar-brand > a {
-    font-size: 1.5rem;
-}
+@media (max-width: 575.98px) {
+    /* Navigation */
+    nav li a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    nav li {
+        width: 100%;
+        border-top: 1px solid black;
+        border-radius: 0;
+    }
+    .navbar-brand>a {
+        font-size: 1.5rem;
+    }
     footer ul {
         justify-content: center;
     }
@@ -89,18 +113,16 @@ nav li {
     footer p {
         margin-top: 10px;
     }
-    .div-1-custom + div {
+    .div-1-custom+div {
         flex-direction: column;
     }
-
-
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
     nav li {
         padding: 0 15px;
         border-top: 1px solid black;
-        width: 100%;  
+        width: 100%;
     }
     nav li a {
         font-size: 3vh;
@@ -108,7 +130,6 @@ nav li {
         font-weight: 900;
         color: #000!important;
     }
-
     footer i {
         padding: 10px;
         font-size: 1.6rem;
@@ -122,7 +143,11 @@ nav li {
     
 } */
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+   
+    a.nav-link:hover {
+        color: rgba(221, 166, 103, 0.6)!important;
+    }
     nav li {
         border: 0;
         width: unset;
@@ -137,8 +162,11 @@ nav li {
     nav li:nth-child(4) {
         border-left: 1px solid black;
     }
+
     footer i {
         padding: 10px;
         font-size: 2rem;
     }
 }
+
+
